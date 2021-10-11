@@ -1,4 +1,4 @@
-module github.com/datreeio/go-binaries/convert
+module github.com/datreeio/go-binaries
 
 go 1.17
 
