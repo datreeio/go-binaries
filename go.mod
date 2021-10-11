@@ -1,4 +1,4 @@
-module github.com/myishay/datree-go-bindings
+module github.com/datreeio/go-binaries/convert
 
 go 1.17
 

@@ -8,6 +8,10 @@ import (
 )
 
 func main() {
+	if len(os.Args) != 2 {
+		fmt.Println("Usage: convert <resource>")
+		os.Exit(1)
+	}
 	q, err := resource.ParseQuantity(os.Args[1])
 
 	if err != nil {
