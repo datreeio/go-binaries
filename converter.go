@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 
 	"k8s.io/apimachinery/pkg/api/resource"
@@ -15,8 +16,7 @@ func main() {
 	q, err := resource.ParseQuantity(os.Args[2])
 
 	if err != nil {
-		fmt.Println(err.Error())
-		os.Exit(1)
+		log.Fatal(err)
 	}
 	fmt.Println(q.AsDec())
 }
