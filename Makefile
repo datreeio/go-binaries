@@ -1,5 +1,5 @@
 build:
 	go build
 
-publish:
+release:
 	goreleaser release --rm-dist
